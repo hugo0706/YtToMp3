@@ -14,7 +14,7 @@ pip install youtube-search-python pytube os_sys
 ```bash
 python3 ./downloader.py 'TuListaAqui.txt' 'NombreDirectorioSalida'
 ```
-## Ejempplo Lista
+## Ejemplo Lista
 ```
 Cancion1
 Cancion2
