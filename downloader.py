@@ -14,7 +14,7 @@ def normalizar(text):
     text = re.sub(r"([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+", r"\1",normalize( "NFD", text), 0, re.I)       
     text = normalize( 'NFC', text)
     return text
-    
+
 def run():
     
     try:        
@@ -23,8 +23,8 @@ def run():
         print("Error: Ruta no encontrada")
         sys.exit()
     for line in f:
-        name= normalizar(line.rstrip('\n'))
-        if name == " ": break
+        name= normalizar(line.rstrip('\n')) + "\n"
+        if name == "\n": continue
         else:
             try:   
                 
